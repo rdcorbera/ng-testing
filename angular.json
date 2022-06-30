@@ -110,9 +110,14 @@
     },
     "@myorg/ui-components": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/myorg/ui-components",
       "sourceRoot": "projects/myorg/ui-components/src",
-      "prefix": "lib",
+      "prefix": "ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
